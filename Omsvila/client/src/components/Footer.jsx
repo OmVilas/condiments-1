@@ -1,14 +1,14 @@
-// src/components/Footer.jsx
 import React from 'react';
 
-const Footer = () => {
-  return (
-    <footer className="bg-dark text-white text-center py-3 mt-auto">
-      <div className="container">
-        <p className="mb-0">&copy; {new Date().getFullYear()} SnackShop. All rights reserved.</p>
-      </div>
-    </footer>
-  );
-};
+const Footer = () => (
+  <footer className="footer">
+    <p>© 2025 Om Vilas. All rights reserved.</p>
+    <div className="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+);
 
 export default Footer;

@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #f9f0e4;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a, .auth-buttons a {
+  text-decoration: none;
+  color: #5d4037;
+  font-weight: 500;
+}
+
+.signup-btn {
+  background: #ffb300;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  background: url('/assets/hero-bg.jpg') no-repeat center;
+  background-size: cover;
+  padding: 4rem 1rem;
+  color: #fff;
+}
+
+.footer {
+  background: #3e2723;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.hero-section {
+  background-color: #fff5e9;
+  background-image: url('/images/bg-pattern.png'); /* optional pattern background */
+  background-repeat: repeat;
+  padding: 2rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #5e2b00;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  color: #7a4b20;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+}
+
+.shop-btn {
+  background-color: #e75b0c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.shop-btn:hover {
+  background-color: #cc4a00;
+}
+
+.learn-btn {
+  border: 2px solid #e75b0c;
+  color: #e75b0c;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.learn-btn:hover {
+  background-color: #fff3e5;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
