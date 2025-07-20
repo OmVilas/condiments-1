@@ -1,31 +1,63 @@
+// pages/Products.jsx
 import React from 'react';
+import ProductCard from '../components/ProductCard';
+
+const products = [
+  {
+    image: '/images/murukku.png',
+    name: 'Murukku',
+    desc: 'Traditional South Indian spiral-shaped snack made from rice flour and spices.',
+    price: 80,
+  },
+  {
+    image: '/images/palak-sev.png',
+    name: 'Palak Sev',
+    desc: 'Crunchy spinach-flavored thin noodle snack, perfect for munching.',
+    price: 95,
+  },
+  {
+    image: '/images/garlic-mix.png',
+    name: 'Garlic Mixture',
+    desc: 'Spicy and flavorful mix with the goodness of garlic, perfect with tea.',
+    price: 110,
+  },
+  {
+    image: '/images/murukku.png',
+    name: 'Murukku',
+    desc: 'Traditional South Indian spiral-shaped snack made from rice flour and spices.',
+    price: 80,
+  },
+  {
+    image: '/images/palak-sev.png',
+    name: 'Palak Sev',
+    desc: 'Crunchy spinach-flavored thin noodle snack, perfect for munching.',
+    price: 95,
+  },
+  {
+    image: '/images/garlic-mix.png',
+    name: 'Garlic Mixture',
+    desc: 'Spicy and flavorful mix with the goodness of garlic, perfect with tea.',
+    price: 110,
+  },
+];
 
 const Products = () => {
-  const products = [
-    { id: 1, name: 'Spiced Nuts', category: 'Snacks' },
-    { id: 2, name: 'Crispy Chips', category: 'Snacks' },
-    { id: 3, name: 'Mango Pickle', category: 'Condiments' },
-    { id: 4, name: 'Tomato Chutney', category: 'Condiments' },
-  ];
-
   return (
-    <div className="container mt-5">
-      <h2 className="mb-4">Our Products</h2>
-      <div className="row">
-        {products.map((product) => (
-          <div className="col-md-3 mb-4" key={product.id}>
-            <div className="card h-100">
-              <img src={`https://via.placeholder.com/300x200?text=${product.name}`} className="card-img-top" alt={product.name} />
-              <div className="card-body">
-                <h5 className="card-title">{product.name}</h5>
-                <p className="card-text">Category: {product.category}</p>
-                <button className="btn btn-outline-primary">Add to Cart</button>
-              </div>
+    <section className="products-section py-5">
+      <div className="container">
+      <h2 className="section-title text-start mb-5">
+        Our <span className="">Products</span>
+      </h2>
+
+        <div className="row g-4">
+          {products.map((item, i) => (
+            <div key={i} className="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+              <ProductCard {...item} />
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
