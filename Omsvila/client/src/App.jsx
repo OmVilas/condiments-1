@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <main className="container py-4">
+      <main className="">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />

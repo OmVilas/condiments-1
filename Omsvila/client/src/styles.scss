@@ -1,0 +1,216 @@
+// ========================
+// Custom Theme Colors (Bootstrap 5)
+// ========================
+$primary: #e75b0c;       // Primary buttons, accents
+$secondary: #5e2b00;     // Headings, dominant
+$light: #fff5e9;         // Hero background
+$dark: #3e2723;          // Footer
+$body-color: #7a4b20;    // Default text color
+
+// Optional custom colors
+$orange-100: #fff3e5;    // Hover backgrounds
+$orange-800: #cc4a00;    // Darker hover states
+
+// ========================
+// Include Bootstrap
+// ========================
+@import "bootstrap/scss/bootstrap";
+
+
+
+// ========================
+// Navbar Styles (Updated)
+// ========================
+
+// Brand Colors
+.brand-logo .logo-orange {
+  color: $primary !important;
+}
+
+.brand-logo .logo-dark {
+  color: $dark !important;
+}
+
+// Navbar Links
+.navbar .nav-link {
+  font-weight: 500;
+  color: #2e3a59 !important; // More readable on white
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: $primary;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover {
+    color: $primary !important;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &.active {
+    color: $primary !important;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+// Login Button
+.custom-login-btn {
+  background-color: transparent;
+  color: $primary !important;
+  border: 1px solid $primary;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $orange-100;
+    color: $orange-100!important;
+  }
+}
+
+// Cart Badge
+.custom-badge {
+  background-color: $primary;
+  color: white;
+  font-size: 0.65rem;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+// ========================
+// Hero Section Styles (Updated)
+// ========================
+.hero-section {
+  background-color: $light; // soft cream background (#fff5e9)
+  padding: 5rem 2rem;
+
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .hero-text {
+    flex: 1 1 50%;
+
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: $secondary; // dark brown for heading
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: $body-color; // soft brown
+      margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+
+      .shop-btn {
+        background-color: $primary;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($primary, 5%);
+        }
+      }
+
+      .learn-btn {
+        border: 1px solid $primary;
+        background-color: transparent;
+        color: $secondary;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $secondary;
+          color:$light;
+        }
+      }
+    }
+  }
+
+  .hero-image {
+    flex: 1 1 45%;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      object-fit: contain;
+    }
+  }
+}
+
+.about-section {
+  background-color: #fffdf5;
+
+  .section-title {
+    color: #6e2c09;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e75b0c;
+  }
+
+  .about-card {
+    background-color: #fffcf2;
+    border: 1px solid #f2cc85;
+    border-radius: 8px;
+  }
+
+  .text-brown {
+    color: #6e2c09;
+  }
+
+  .check-icon {
+    background-color: #fdd76e;
+    color: #6e2c09;
+    font-size: 16px;
+    border-radius: 50%;
+    padding: 6px;
+    line-height: 1;
+  }
+
+  .vision-block {
+    font-size: 14px;
+  }
+}

@@ -3,32 +3,109 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
+/* navbar section */
+.navbar-container {
+  background-color: #ffffff;
   padding: 1rem 2rem;
-  background: #f9f0e4;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo-orange {
+    color: #e75b0c;
+}
+
+.logo-brown {
+  color: #522600;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
-.nav-links a, .auth-buttons a {
+.nav-links a {
   text-decoration: none;
-  color: #5d4037;
   font-weight: 500;
+  color: #2e2e3a;
+  font-size: 1rem;
 }
 
-.signup-btn {
-  background: #ffb300;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: white;
+.nav-links a:hover {
+  color: #e75b0c;
 }
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.login-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e75b0c;
+  color: #e75b0c;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #fff3e5;
+}
+
+.cart-icon {
+  position: relative;
+  color: #2e2e3a;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  background-color: #e75b0c;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+/* client/src/components/Navbar.css */
+
+.custom-login-btn {
+  border-color: #e75b0c !important;
+  color: #e75b0c !important;
+}
+
+.custom-login-btn:hover {
+  background-color: #e75b0c !important;
+  color: white !important;
+}
+
+.custom-badge {
+  background-color: #e75b0c !important;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 7px;
+}
+
+
 
 .hero {
   text-align: center;
@@ -46,7 +123,7 @@ body {
 }
 .hero-section {
   background-color: #fff5e9;
-  background-image: url('/images/bg-pattern.png'); /* optional pattern background */
+  /* background-image: url('/images/bg-pattern.png'); optional pattern background */
   background-repeat: repeat;
   padding: 2rem;
 }
