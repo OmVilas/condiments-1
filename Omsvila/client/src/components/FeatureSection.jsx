@@ -4,7 +4,7 @@ import { FaCheckCircle, FaShippingFast, FaLock, FaBoxOpen } from 'react-icons/fa
 const FeatureSection = () => {
   return (
     <div className="feature-container">
-      <section className="why-choose-us text-center">
+      <section className="why-choose-us text-start">
         <h2 className="section-title">Why Choose Us</h2>
         <div className="feature-grid">
           <div className="feature-card">
