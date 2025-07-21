@@ -191,3 +191,64 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 }
+
+.newsletter-input input {
+  height: 48px;
+  padding-right: 50px; /* space for arrow */
+}
+
+.bg-orange {
+  background-color: #f97316; /* Tailwind's orange-500 equivalent */
+}
+
+.bg-orange:hover {
+  background-color: #ea580c; /* Tailwind's orange-600 */
+}
+
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links li a:hover {
+  color: #f97316;
+}
+
+.social-icons a {
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+  color:#fff
+}
+
+.social-icons a:hover {
+  color: #f97316;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+

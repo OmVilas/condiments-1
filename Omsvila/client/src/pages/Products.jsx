@@ -1,4 +1,3 @@
-// pages/Products.jsx
 import React from 'react';
 import ProductCard from '../components/ProductCard';
 
@@ -45,9 +44,9 @@ const Products = () => {
   return (
     <section className="products-section py-5">
       <div className="container">
-      <h2 className="section-title text-start mb-5">
-        Our <span className="">Products</span>
-      </h2>
+        <h2 className="section-title text-start mb-5">
+          Our <span className="">Products</span>
+        </h2>
 
         <div className="row g-4">
           {products.map((item, i) => (
@@ -55,6 +54,13 @@ const Products = () => {
               <ProductCard {...item} />
             </div>
           ))}
+        </div>
+
+        {/* Centered View All Button */}
+        <div className="text-center mt-5 ">
+          <button className="btn btn-primary text-white px-4 py-2">
+            View All Products
+          </button>
         </div>
       </div>
     </section>
