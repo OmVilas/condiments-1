@@ -79,6 +79,7 @@ const Footer = () => {
       <p>© 2023 Om Vilas Condiments. All rights reserved.</p>
     </div>
   </div>
+  
 
   {/* 🔶 Floating WhatsApp Icon */}
   <a
