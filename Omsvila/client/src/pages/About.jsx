@@ -4,7 +4,7 @@ import aboutImg from "../assets/about-Img.png"; // Use your actual image path
 const About = () => {
   return (
     <div className="about-section">
-      <div className="container mt-5">
+      <div className="container mt-5 mb-5">
         <h2 className="section-title">
           Our Story
         </h2>

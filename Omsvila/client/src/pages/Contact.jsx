@@ -49,8 +49,8 @@ const Contact = () => {
                 <div className="info-item d-flex">
                   <div className="icon-box me-3"><FaClock /></div>
                   <div>
-                    <strong>Mon–Fri:</strong> 9 AM–6 PM<br />
-                    <strong>Sat:</strong> 10 AM–4 PM<br />
+                    <strong>Mon–Fri:</strong> 9 AM– 6 PM<br />
+                    <strong>Sat:</strong> 10 AM– 4 PM<br />
                     <strong>Sun:</strong> Closed
                   </div>
                 </div>

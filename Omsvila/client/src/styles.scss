@@ -32,6 +32,12 @@ $orange-800: #cc4a00;    // Darker hover states
 }
 
 // Navbar Links
+.navbar{
+  position:sticky;
+  top: 0;
+  font-size: 18px;
+  z-index: 1000;
+}
 .navbar .nav-link {
   font-weight: 500;
   color: #2e3a59 !important; // More readable on white
@@ -73,6 +79,7 @@ $orange-800: #cc4a00;    // Darker hover states
   color: $primary !important;
   border: 1px solid $primary;
   font-weight: 500;
+  font-size: 20 px;
   padding: 0.4rem 1rem;
   border-radius: 8px;
   transition: all 0.3s;

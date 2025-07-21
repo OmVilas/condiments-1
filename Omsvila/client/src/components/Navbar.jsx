@@ -6,9 +6,9 @@ import { FiShoppingCart } from 'react-icons/fi';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-white shadow-sm px-4">
-      <div className="container-fluid">
-     <Link className="navbar-brand fw-bold brand-logo" to="/">
+    <nav className="navbar navbar-expand-lg bg-white shadow px-4">
+      <div className="container">
+     <Link className="navbar-brand fw-bold brand-logo fs-3" to="/">
   <span className="logo-orange">Om</span> <span className="logo-brown">Vilas</span>
 </Link>
 
