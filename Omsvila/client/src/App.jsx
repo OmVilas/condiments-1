@@ -10,6 +10,9 @@ import Signup from "./pages/Signup";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Features from "./pages/Features";
+import AdminProducts from './pages/AdminProducts'; // Admin View
+import AdminLogin from "./pages/AdminLogin";
+import AdminDashboard from "./pages/AdminDashboard";
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+           <Route path="/admin/products" element={<AdminProducts />} />
+            <Route path="/admin/login" element={<AdminLogin />} />
+           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/about" element={<About />} />
           <Route path="/features" element={<Features/>} />
           <Route path="/contact" element={<Contact />} />

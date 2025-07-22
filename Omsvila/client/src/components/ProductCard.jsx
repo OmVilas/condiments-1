@@ -39,7 +39,7 @@ const ProductCard = ({ image, name, desc, price }) => {
         <p className="card-text text-muted small">{desc}</p>
         <div className="d-flex justify-content-between align-items-center mt-3">
           <span className="fw-bold text-danger">₹{price}</span>
-          <button className="btn btn-warning text-white fw-semibold px-3 py-1 rounded-pill">
+          <button className="btn btn-warning text-white fw-semibold px-3 py-1 ">
             Add to Cart
           </button>
         </div>
