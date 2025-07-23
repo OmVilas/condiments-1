@@ -38,7 +38,6 @@
 // app.listen(PORT, () => {
 //   console.log(`🚀 Server running at http://localhost:${PORT}`);
 // });
-
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
@@ -46,6 +45,7 @@ const cartRoutes = require("./routes/cartRoutes");
 const productRoutes = require("./routes/productRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const adminRoutes = require("./routes/adminRoutes");
+const loginRoute = require("./routes/loginRoute");
 const cors = require("cors");
 
 dotenv.config();
@@ -60,6 +60,7 @@ app.use("/api/cart", cartRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/admin", adminRoutes);
+app.use("/api/login", loginRoute);
 
 app.get("/", (req, res) => {
   res.send("🎉 Backend API is working!");
