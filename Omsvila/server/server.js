@@ -56,11 +56,11 @@ const PORT = process.env.PORT || 3009;
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/cart", cartRoutes);
-app.use("/api/products", productRoutes);
-app.use("/api/orders", orderRoutes);
-app.use("/api/admin", adminRoutes);
-app.use("/api/login", loginRoute);
+app.use("/cart", cartRoutes);
+app.use("/products", productRoutes);
+app.use("/orders", orderRoutes);
+app.use("/admin", adminRoutes);
+app.use("/login", loginRoute);
 
 app.get("/", (req, res) => {
   res.send("🎉 Backend API is working!");

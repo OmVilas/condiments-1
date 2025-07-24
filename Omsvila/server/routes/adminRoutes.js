@@ -51,8 +51,19 @@ router.get("/dashboard", async (req, res) => {
       revenue: revenueData[0]?.total || 0,
     });
   } catch (error) {
+    console.error("❌ Dashboard Error:", error);  // Add this line
     res.status(500).json({ message: "Failed to fetch dashboard data" });
   }
 });
+// Dummy admin dashboard data
+// router.get("/dashboard", (req, res) => {
+//   res.json({
+//     totalProducts: 5,
+//     totalOrders: 10,
+//     totalCustomers: 7,
+//     revenue: 25000
+//   });
+// });
+
 
 module.exports = router;

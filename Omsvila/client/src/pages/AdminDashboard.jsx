@@ -77,7 +77,8 @@ const AdminDashboard = () => {
     // }
 
     // TEMP: Skip token for now
-    axios.get("http://localhost:5000/api/admin/dashboard")
+    // axios.get("http://localhost:5000/admin/dashboard")
+    axios.get("http://localhost:5000/admin/dashboard")
       .then((res) => setDashboardData(res.data))
       .catch((err) => console.log("Error:", err));
   }, [navigate]);

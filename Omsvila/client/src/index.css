@@ -252,3 +252,35 @@ body {
   transform: scale(1.1);
 }
 
+/* 1. Full-height layout using flex */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root, .app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 2. Let footer stick to the bottom if content is short */
+.footer {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+/* 3. Optional WhatsApp Floating Icon styling */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  z-index: 999;
+  text-align: center;
+}
